@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Input Test </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-radio-group [(ngModel)]="selectedFruit">
+    <ion-list>
+      <ion-item>
+        <ion-radio value="grapes">Grapes</ion-radio>
+      </ion-item>
+      <ion-item style="padding-left: 16px" *ngIf="selectedFruit === 'grapes'">
+        <ion-checkbox labelPlacement="end">
+          <span class="ion-text-wrap">
+            Do you want to save Grapes as your favorite fruit?
+          </span>
+        </ion-checkbox>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="strawberries">Strawberries</ion-radio>
+      </ion-item>
+      <ion-item
+        style="padding-left: 16px"
+        *ngIf="selectedFruit === 'strawberries'"
+      >
+        <ion-toggle labelPlacement="end">
+          <span class="ion-text-wrap">
+            Do you want to save Strawberries as your favorite fruit?
+          </span>
+        </ion-toggle>
+      </ion-item>
+
+      <ion-item>
+        <ion-radio value="pineapple">Pineapple</ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-radio value="cherries">Cherries</ion-radio>
+      </ion-item>
+    </ion-list>
+  </ion-radio-group>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "modern-input-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
